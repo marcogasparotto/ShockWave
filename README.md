@@ -11,7 +11,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.8+-purple?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/versão-1.0.0-blueviolet?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/versão-2.0.0-blueviolet?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/módulos-90+-darkviolet?style=for-the-badge" alt="Modules">
   <img src="https://img.shields.io/badge/tema-roxo%20%26%20preto-8b00ff?style=for-the-badge" alt="Theme">
   <img src="https://img.shields.io/badge/licença-MIT-mediumpurple?style=for-the-badge" alt="License">

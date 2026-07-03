@@ -5,10 +5,6 @@
 </p>
 
 <p align="center">
-<b>Advanced Network Reconnaissance & Analysis Toolkit</b><br>
-<i>Decepticon Intelligence Unit</i><br><br>
-
-"Logic. Superiority. Objective: Control."
 </p>
 
 ---

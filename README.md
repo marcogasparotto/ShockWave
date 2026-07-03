@@ -328,5 +328,5 @@ Esta ferramenta deve ser utilizada **exclusivamente em ambientes autorizados** p
 ---
 
 <p align="center">
-  <b>SHOCKWAVE v1.0.0</b> | Ferramenta de Diagnóstico de Rede
+  <b>SHOCKWAVE v2.0.0</b> | Ferramenta de Diagnóstico de Rede
 </p>

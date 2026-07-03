@@ -1,4 +1,4 @@
-"""Shockwave - Entry point for python -m shockwave."""
+"""Shockwave - Ponto de entrada para python -m shockwave."""
 
 import sys
 
@@ -7,15 +7,15 @@ from shockwave import ui
 
 
 def main():
-    """Main entry point."""
+    """Ponto de entrada principal."""
     if len(sys.argv) < 2:
         ui.console.print()
-        ui.print_error("No target specified!")
+        ui.print_error("Nenhum alvo especificado!")
         ui.console.print()
-        ui.console.print("  [bold magenta]Usage:[/bold magenta]")
-        ui.console.print("    python -m shockwave [bold cyan]<target>[/bold cyan]")
+        ui.console.print("  [bold magenta]Uso:[/bold magenta]")
+        ui.console.print("    python -m shockwave [bold cyan]<alvo>[/bold cyan]")
         ui.console.print()
-        ui.console.print("  [bold magenta]Examples:[/bold magenta]")
+        ui.console.print("  [bold magenta]Exemplos:[/bold magenta]")
         ui.console.print("    python -m shockwave [cyan]google.com[/cyan]")
         ui.console.print("    python -m shockwave [cyan]192.168.1.1[/cyan]")
         ui.console.print("    python -m shockwave [cyan]example.org[/cyan]")

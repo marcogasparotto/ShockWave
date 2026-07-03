@@ -4,9 +4,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="shockwave",
-    version="0.1.0",
-    description="Shockwave - Network Diagnostic Toolkit",
-    author="Decepticon Intelligence Unit",
+    version="1.0.0",
+    description="Shockwave - Complete Network Diagnostic Toolkit",
+    author="Shockwave Team",
     packages=find_packages(),
     python_requires=">=3.8",
     install_requires=[

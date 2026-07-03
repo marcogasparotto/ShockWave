@@ -1,140 +1,361 @@
 # ⚡ SHOCKWAVE ⚡
 
-> **Ferramenta de Análise de Redes — Decepticon Intelligence Unit**
->
-> *"Logic. Superiority. Objective: Control."*
+<p align="center">
+    <img src="assets/shockwave.png" width="700">
+</p>
 
-**SHOCKWAVE** é uma ferramenta de diagnóstico e análise de redes para terminal, desenvolvida em Python. Ela reúne diversas funcionalidades de reconhecimento e troubleshooting em uma interface interativa.
+<p align="center">
+<b>Advanced Network Reconnaissance & Analysis Toolkit</b><br>
+<i>Decepticon Intelligence Unit</i><br><br>
 
----
-
-## ✨ Funcionalidades
-
-| Módulo | Comando | Descrição |
-|--------|---------|-----------|
-| Resolve Host | `resolve` | Resolve um hostname para IPv4 |
-| Ping | `ping [count]` | Testa a conectividade com o alvo |
-| Ping Sweep | `sweep <base_ip> [start-end]` | Descobre hosts ativos em uma faixa de IP |
-| Port Scan | `scan` | Escaneia as portas mais comuns utilizando múltiplas threads |
-| Custom Port Scan | `cscan <range>` | Escaneia portas definidas pelo usuário (`1-1024`, `22,80,443`, etc.) |
-| DNS Records | `dns` | Consulta registros A, AAAA, MX, NS, CNAME e PTR |
-| Traceroute | `trace` | Exibe o caminho dos pacotes até o destino |
-| HTTP Headers | `headers` | Obtém os headers HTTP do servidor |
-| WHOIS Lookup | `whois` | Consulta informações WHOIS via porta 43 |
-| Geolocate IP | `geo` | Localiza aproximadamente um endereço IP |
-| Local Network Info | `netinfo` | Exibe o IP local e o IP público da máquina |
+"Logic. Superiority. Objective: Control."
+</p>
 
 ---
 
-## 🚀 Instalação
+# 📖 Sobre
 
-Clone o repositório:
+**SHOCKWAVE** é uma ferramenta de reconhecimento e análise de redes desenvolvida em Python, projetada para fornecer uma suíte completa de coleta de informações, enumeração, diagnóstico e identificação de serviços.
+
+O projeto busca reunir, em uma única interface de terminal, as funcionalidades mais utilizadas durante as fases de **Network Reconnaissance**, permitindo analisar hosts, serviços, infraestrutura e protocolos de forma rápida e organizada.
+
+Seu foco é oferecer uma experiência moderna para administradores de redes, estudantes e profissionais de segurança que realizam avaliações em ambientes autorizados.
+
+---
+
+# ✨ Funcionalidades
+
+## 🌍 Descoberta de Rede
+
+- Host Resolver
+- Reverse DNS
+- Ping
+- Ping Sweep
+- ARP Scan
+- TCP Host Discovery
+- UDP Host Discovery
+- CIDR Scanner
+- Gateway Detection
+- Network Interface Discovery
+- MAC Address Discovery
+- Vendor Identification (OUI)
+
+---
+
+## 🔍 Enumeração
+
+- DNS Lookup
+- WHOIS Lookup
+- ASN Lookup
+- GeoIP Lookup
+- Subdomain Enumeration
+- DNSSEC Detection
+- Zone Transfer Check
+- CDN Detection
+
+---
+
+## 🚪 Port Scanning
+
+- Common Port Scan
+- Full Port Scan
+- Custom Port Scan
+- TCP Scan
+- UDP Scan
+- SYN Scan
+- ACK Scan
+- FIN Scan
+- NULL Scan
+- XMAS Scan
+- Window Scan
+- Idle Scan
+- Fragment Scan
+- Adaptive Timing
+
+---
+
+## 🖥️ Identificação de Serviços
+
+- Banner Grabbing
+- Service Detection
+- Version Detection
+- HTTP Detection
+- SSH Detection
+- FTP Detection
+- SMTP Detection
+- SMB Detection
+- SNMP Detection
+- Database Detection
+- MQTT Detection
+- Redis Detection
+
+---
+
+## 🧠 Fingerprinting
+
+- Operating System Detection
+- Device Type Detection
+- TCP/IP Stack Analysis
+- TTL Analysis
+- MSS Analysis
+- Window Size Analysis
+
+---
+
+## 🔐 SSL / TLS
+
+- Certificate Viewer
+- Certificate Validation
+- Cipher Enumeration
+- TLS Version Detection
+- HSTS Detection
+- ALPN Detection
+- Weak Cipher Detection
+- Expiration Checker
+
+---
+
+## 🌐 HTTP Analysis
+
+- HTTP Headers
+- Security Headers
+- Cookie Analysis
+- Redirect Detection
+- Compression Detection
+- HTTP Methods
+- HTTP/2 Detection
+- HTTP/3 Detection
+- robots.txt
+- sitemap.xml
+- Web Technology Detection
+
+---
+
+## 📡 Packet Analysis
+
+- Live Packet Capture
+- PCAP Reader
+- Protocol Statistics
+- TCP Stream Analysis
+- DNS Analysis
+- HTTP Analysis
+- TLS Handshake Analysis
+- ICMP Analysis
+- Bandwidth Statistics
+
+---
+
+## 📊 Performance
+
+- Latency
+- Packet Loss
+- Jitter
+- MTU Discovery
+- Path MTU
+- Throughput Estimation
+
+---
+
+## 📄 Relatórios
+
+- JSON Export
+- HTML Report
+- CSV Export
+- XML Export
+- PDF Report
+- Scan Comparison
+
+---
+
+# 🚀 Instalação
 
 ```bash
 git clone https://github.com/marcogasparotto/shockwave.git
+
 cd shockwave
-```
 
-Crie um ambiente virtual (opcional, mas recomendado):
-
-```bash
 python3 -m venv .venv
+
 source .venv/bin/activate
-```
 
-Instale as dependências:
-
-```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## ▶️ Como usar
-
-Executar diretamente:
+# ▶️ Executando
 
 ```bash
-python -m shockwave google.com
+python -m shockwave <host>
 ```
 
-Ou instalar o projeto localmente:
+ou
 
 ```bash
 pip install -e .
-shockwave google.com
+
+shockwave <host>
 ```
 
 ---
 
-## 💻 Comandos
+# 💻 Comandos
 
-Após iniciar o programa, estarão disponíveis:
-
-| Comando | Descrição |
-|---------|-----------|
-| `resolve` | Resolver hostname |
-| `ping [count]` | Executar ping |
-| `sweep <ip>` | Descobrir hosts ativos |
-| `scan` | Escanear portas comuns |
-| `cscan <range>` | Escanear portas personalizadas |
-| `dns` | Consultar registros DNS |
-| `trace` | Executar traceroute |
-| `headers` | Obter headers HTTP |
-| `whois` | Consulta WHOIS |
-| `geo` | Geolocalizar IP |
-| `netinfo` | Informações da rede local |
-| `target <host>` | Alterar o alvo atual |
-| `banner` | Exibir o banner |
-| `clear` | Limpar o terminal |
-| `help` | Mostrar ajuda |
-| `exit` | Encerrar o programa |
+| Categoria | Comandos |
+|------------|----------|
+| Reconhecimento | resolve, dns, whois, geo, asn |
+| Descoberta | ping, sweep, arp, discover |
+| Escaneamento | scan, cscan, syn, udp |
+| Serviços | banner, detect, version |
+| HTTP | headers, cookies, methods |
+| SSL | ssl, tls |
+| Sistema | netinfo |
+| Utilidades | clear, help, target, banner, exit |
 
 ---
 
-## 📦 Dependências
+# 🗺️ Roadmap
+
+## Core
+
+- [x] Host Resolver
+- [x] DNS Lookup
+- [x] Ping
+- [x] Ping Sweep
+- [x] Port Scanner
+- [x] HTTP Headers
+- [x] WHOIS
+- [x] GeoIP
+- [x] Traceroute
+
+---
+
+## Network Discovery
+
+- [ ] ARP Scanner
+- [ ] CIDR Scanner
+- [ ] Reverse DNS
+- [ ] Gateway Discovery
+- [ ] MAC Discovery
+- [ ] Vendor Lookup
+- [ ] Interface Enumeration
+
+---
+
+## Port Scanner
+
+- [ ] Full TCP Scan
+- [ ] UDP Scan
+- [ ] SYN Scan
+- [ ] ACK Scan
+- [ ] FIN Scan
+- [ ] NULL Scan
+- [ ] XMAS Scan
+- [ ] Idle Scan
+- [ ] Fragment Scan
+- [ ] Timing Profiles
+
+---
+
+## Enumeration
+
+- [ ] Banner Grabbing
+- [ ] Service Detection
+- [ ] Version Detection
+- [ ] ASN Lookup
+- [ ] DNSSEC
+- [ ] Zone Transfer
+- [ ] CDN Detection
+- [ ] Subdomain Enumeration
+
+---
+
+## Fingerprinting
+
+- [ ] OS Detection
+- [ ] Device Identification
+- [ ] TCP/IP Stack Analysis
+- [ ] TTL Analysis
+
+---
+
+## SSL / TLS
+
+- [ ] Certificate Viewer
+- [ ] TLS Detection
+- [ ] Cipher Enumeration
+- [ ] Weak Cipher Detection
+- [ ] Expiration Alerts
+
+---
+
+## HTTP
+
+- [ ] HTTP Methods
+- [ ] Cookie Analysis
+- [ ] CSP Detection
+- [ ] Redirect Analysis
+- [ ] robots.txt
+- [ ] sitemap.xml
+- [ ] Web Technology Detection
+
+---
+
+## Packet Analysis
+
+- [ ] Live Capture
+- [ ] PCAP Reader
+- [ ] TCP Streams
+- [ ] Protocol Statistics
+
+---
+
+## Reporting
+
+- [ ] HTML Report
+- [ ] JSON Export
+- [ ] CSV Export
+- [ ] XML Export
+- [ ] PDF Report
+
+---
+
+## Interface
+
+- [ ] Plugin System
+- [ ] Configuration Profiles
+- [ ] Session Save
+- [ ] Autocomplete
+- [ ] Command History
+- [ ] Themes
+
+---
+
+# 📦 Dependências
 
 - Python 3.8+
-- rich ≥ 13
-- requests
+- Rich
+- Requests
 - dnspython
-- Ferramentas do sistema:
-  - `ping`
-  - `traceroute`
-  - `dig`
+
+Ferramentas do sistema:
+
+- ping
+- traceroute
+- dig
 
 ---
 
-## 📸 Exemplo
+# ⚠️ Aviso
 
-```text
-$ shockwave google.com
+O SHOCKWAVE foi desenvolvido para fins de estudo, administração e reconhecimento de redes.
 
-Target: google.com
-
-shockwave >
-
-> scan
-[+] 22/tcp   SSH
-[+] 80/tcp   HTTP
-[+] 443/tcp  HTTPS
-
-> dns
-A      142.250.xxx.xxx
-AAAA   2800:...
-MX     smtp.google.com
-```
+Utilize a ferramenta apenas em sistemas e redes para os quais você possua autorização.
 
 ---
 
-## ⚠️ Aviso
+# 🚧 Estado do Projeto
 
-O SHOCKWAVE foi desenvolvido para fins de estudo, diagnóstico e administração de redes.
+**Versão atual:** `v0.0.1`
 
-Utilize a ferramenta apenas em sistemas e redes para os quais *você possua autorização.*
-
----
-
-## 🚧 Versão
-
-**v0.0.1** — Primeira versão pública.
+O SHOCKWAVE está em desenvolvimento contínuo e tem como objetivo se tornar uma suíte completa de reconhecimento e análise de redes para ambientes autorizados.

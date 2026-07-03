@@ -1,4 +1,4 @@
-# ⚡ SHOCKWAVE
+# ⚡ SHOCKWAVE ⚡
 
 > **Ferramenta de Análise de Redes — Decepticon Intelligence Unit**
 >
@@ -131,10 +131,10 @@ MX     smtp.google.com
 
 O SHOCKWAVE foi desenvolvido para fins de estudo, diagnóstico e administração de redes.
 
-Utilize a ferramenta apenas em sistemas e redes para os quais você possua autorização.
+Utilize a ferramenta apenas em sistemas e redes para os quais *você possua autorização.*
 
 ---
 
 ## 🚧 Versão
 
-**v0.1.0** — Primeira versão pública.
+**v0.0.1** — Primeira versão pública.

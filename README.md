@@ -4,7 +4,7 @@
 >
 > *"Logic. Superiority. Objective: Control."*
 
-**SHOCKWAVE** é uma ferramenta de diagnóstico e análise de redes para terminal, desenvolvida em Python. Ela reúne diversas funcionalidades de reconhecimento e troubleshooting em uma interface interativa inspirada no universo Transformers.
+**SHOCKWAVE** é uma ferramenta de diagnóstico e análise de redes para terminal, desenvolvida em Python. Ela reúne diversas funcionalidades de reconhecimento e troubleshooting em uma interface interativa.
 
 ---
 

@@ -13,7 +13,6 @@
   <img src="https://img.shields.io/badge/python-3.8+-purple?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/versão-2.0.0-blueviolet?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/módulos-90+-darkviolet?style=for-the-badge" alt="Modules">
-  <img src="https://img.shields.io/badge/tema-roxo%20%26%20preto-8b00ff?style=for-the-badge" alt="Theme">
   <img src="https://img.shields.io/badge/licença-MIT-mediumpurple?style=for-the-badge" alt="License">
 </p>
 
@@ -21,7 +20,7 @@
 
 ## 📖 Sobre
 
-**SHOCKWAVE** é uma ferramenta de reconhecimento e análise de redes desenvolvida em Python, projetada para profissionais de segurança, administradores de redes e estudantes. Ela reúne **mais de 90 funcionalidades** em uma interface de terminal moderna com tema **roxo e preto**.
+**SHOCKWAVE** é uma ferramenta de reconhecimento e análise de redes desenvolvida em Python, projetada para profissionais de segurança, administradores de redes e estudantes. Ela reúne **mais de 90 funcionalidades** em uma interface de terminal moderna.
 
 O projeto organiza as ferramentas em **10 categorias** que cobrem todo o ciclo de reconhecimento de rede — desde a descoberta de hosts até a geração de relatórios em múltiplos formatos.
 

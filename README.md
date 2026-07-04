@@ -59,12 +59,6 @@ python -m shockwave example.org
 
 ---
 
-## 🎨 Tema Visual
-
-O Shockwave utiliza uma paleta de cores em **roxo e preto** com gradientes e tons intermediários, proporcionando uma experiência visual moderna e imersiva no terminal. A interface é construída com a biblioteca [Rich](https://github.com/Textualize/rich).
-
----
-
 ## ✨ Funcionalidades
 
 ### 🌍 Descoberta de Rede
